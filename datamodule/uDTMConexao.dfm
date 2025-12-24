@@ -1,4 +1,23 @@
-object dtmConexao: TdtmConexao
+object dtmPrincipal: TdtmPrincipal
   Height = 396
   Width = 492
+  object conexaoDB: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP')
+    Connected = True
+    DisableSavepoints = False
+    HostName = ''
+    Port = 0
+    Database = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=vendas;Data Source=DESKTOP-SBALBPK\SQLE' +
+      'XPRESS'
+    User = '.\guilh'
+    Password = ''
+    Protocol = 'ado'
+    Left = 440
+    Top = 320
+  end
 end
